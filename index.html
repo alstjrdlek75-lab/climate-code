@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anti-Gravity Climate Code</title>
+  <!-- Google Fonts: Outfit for titles, Plus Jakarta Sans for body -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./node_modules/@yadoran-2025/booong-design-system/dist/booong.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background Decorative Glowing Blobs -->
+  <div class="glow-blob blob-1"></div>
+  <div class="glow-blob blob-2"></div>
+  <div class="glow-blob blob-3"></div>
+
+  <div class="app-container">
+    
+    <!-- Top Header -->
+    <header class="main-header">
+      <div class="logo-area">
+        <span class="icon-sparkle">✦</span>
+        <h1>ANTI-GRAVITY CLIMATE CODE</h1>
+      </div>
+      <p class="subtitle">식생 분포와 기후 역학 매커니즘, 그리고 쾨펜의 분류 체계</p>
+      
+      <!-- Tab Navigation -->
+      <nav class="tab-navigation">
+        <button class="tab-btn active" data-tab="tab-intro">
+          <span class="btn-icon">🌱</span> PART 1. 식생과 기후
+        </button>
+        <button class="tab-btn" data-tab="tab-mechanism">
+          <span class="btn-icon">⚙️</span> PART 2. 기후 매커니즘
+        </button>
+        <button class="tab-btn" data-tab="tab-koppen">
+          <span class="btn-icon">🌲</span> PART 3. 쾨펜 분류 코드
+        </button>
+        <button class="tab-btn" data-tab="tab-reference">
+          <span class="btn-icon">📚</span> 기후 사전
+        </button>
+      </nav>
+    </header>
+
+    <!-- Main Content Panels -->
+    <main class="content-panel">
+
+      <!-- ==================== PART 1: INTRO ==================== -->
+      <section id="tab-intro" class="tab-content active-content">
+        <div class="card intro-intro-card">
+          <h2>🌱 PART 1. 기후 분류의 기초</h2>
+          <p>기후는 지표면 위의 식생(Vegetation) 분포를 결정하는 가장 결정적인 요인입니다. 식생의 형태와 생태적 특징은 기온과 강수량의 패턴에 직접적으로 반응하며, 쾨펜의 세계 기후 분류법은 바로 이러한 <strong>식생 분포 경계</strong>를 기준선으로 삼아 고안되었습니다.</p>
+        </div>
+
+        <div class="flow-container">
+          <div class="flow-step">
+            <div class="step-num">01</div>
+            <div class="step-icon">🌦️</div>
+            <h3>기온 & 강수량</h3>
+            <p>태양 에너지(위도)와 대기 순환에 의해 결정되는 기후의 2대 축</p>
+          </div>
+          <div class="flow-arrow">➔</div>
+          <div class="flow-step">
+            <div class="step-num">02</div>
+            <div class="step-icon">🌲</div>
+            <h3>식생 분포 (Vegetation)</h3>
+            <p>수목(나무)이 자랄 수 있는가? 어떤 형태로 적응하는가?</p>
+          </div>
+          <div class="flow-arrow">➔</div>
+          <div class="flow-step">
+            <div class="step-num">03</div>
+            <div class="step-icon">🗺️</div>
+            <h3>세계 기후 분류</h3>
+            <p>식생 한계선과 일치하는 수학적·통계적 경계 설정</p>
+          </div>
+          <div class="flow-arrow">➔</div>
+          <div class="flow-step">
+            <div class="step-num">04</div>
+            <div class="step-icon">🔬</div>
+            <h3>기후 요소 vs 요인</h3>
+            <p>분류 결과 뒤에 숨겨진 물리적·역학적 유기 관계 규명</p>
+          </div>
+        </div>
+
+        <!-- Factors vs Elements Card -->
+        <div class="grid-2-col">
+          <div class="card card-neon-purple">
+            <div class="card-header">
+              <span class="header-tag tag-cause">Cause: 원인</span>
+              <h3>기후 요인 (Climate Factors)</h3>
+            </div>
+            <p>기후 요소를 변화시키고 지역적 차이를 만들어내는 <strong>근본적인 환경적 원인</strong>입니다.</p>
+            <ul class="mechanism-list term-only">
+              <li><strong>위도 (Latitude)</strong></li>
+              <li><strong>수륙 분포 (Land/Sea)</strong></li>
+              <li><strong>대기 대순환 (Circulation)</strong></li>
+              <li><strong>지형 (Terrain)</strong></li>
+              <li><strong>해류 (Ocean Currents)</strong></li>
+              <li><strong>고도 (Elevation)</strong></li>
+            </ul>
+          </div>
+
+          <div class="card card-neon-blue">
+            <div class="card-header">
+              <span class="header-tag tag-effect">Result: 결과</span>
+              <h3>기후 요소 (Climate Elements)</h3>
+            </div>
+            <p>기후를 구성하며 우리가 일상적으로 느끼고 측정할 수 있는 <strong>기상학적 상태값</strong>입니다.</p>
+            <ul class="mechanism-list term-only">
+              <li><strong>기온 (Temperature)</strong></li>
+              <li><strong>강수량 (Precipitation)</strong></li>
+              <li><strong>바람 (Wind)</strong></li>
+              <li><strong>습도 (Humidity)</strong></li>
+              <li><strong>기압 (Air Pressure)</strong></li>
+              <li><strong>일사량 (Solar Radiation)</strong></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== PART 2: MECHANISMS ==================== -->
+      <section id="tab-mechanism" class="tab-content">
+        <div class="card">
+          <h2>⚙️ PART 2. 기후 형성의 기본 매커니즘</h2>
+          <p>지구 기후는 단순한 무작위적 현상이 아닙니다. 위도, 비열, 기압대와 대기 대순환이 맞물려 움직이는 정교한 물리적 시스템입니다. 두 가지 핵심 매커니즘을 시뮬레이션을 통해 확인해 보세요.</p>
+        </div>
+
+        <!-- Interactive Causal Map Interface -->
+        <div class="card causal-map-card">
+          <h3>🧭 기후 요인 ➔ 요소 간의 역학 관계 (인과 지도)</h3>
+          <p class="map-instruction">좌측의 <strong>기후 요인(원인)</strong>을 클릭하면, 우측의 영향을 받는 <strong>기후 요소(결과)</strong>와 구체적인 역학 매커니즘이 활성화됩니다.</p>
+          
+          <div class="causal-map-grid">
+            <!-- Left Side: Factors -->
+            <div class="factors-column">
+              <h4 class="col-title text-orange">기후 요인 (원인)</h4>
+              <button class="factor-node" data-factor="latitude">🌍 위도 (Latitude)</button>
+              <button class="factor-node" data-factor="landsea">🌊 수륙 분포 (Land/Sea)</button>
+              <button class="factor-node" data-factor="circulation">🌀 대기 대순환 (Circulation)</button>
+              <button class="factor-node" data-factor="terrain">⛰️ 지형 (Terrain)</button>
+              <button class="factor-node" data-factor="currents">🚢 해류 (Currents)</button>
+              <button class="factor-node" data-factor="altitude">🏔️ 고도 (Altitude)</button>
+            </div>
+
+            <!-- Middle Connections -->
+            <div class="connections-column">
+              <div class="connection-explanation-box" id="causal-explanation">
+                <div class="exp-title">원인을 선택해 주세요</div>
+                <div class="exp-desc">기후 요인이 지구상의 날씨 패턴을 어떻게 형성하는지 인과적 메커니즘이 여기에 표시됩니다.</div>
+              </div>
+            </div>
+
+            <!-- Right Side: Elements -->
+            <div class="elements-column">
+              <h4 class="col-title text-cyan">기후 요소 (결과)</h4>
+              <div class="element-node" id="elem-temp">🌡️ 기온 (Temperature)</div>
+              <div class="element-node" id="elem-precip">🌧️ 강수량 (Precipitation)</div>
+              <div class="element-node" id="elem-wind">💨 바람 (Wind)</div>
+              <div class="element-node" id="elem-humidity">💧 습도 (Humidity)</div>
+              <div class="element-node" id="elem-pressure">⚖️ 기압 (Pressure)</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid-2-col">
+          <!-- Sandbox 1: Specific Heat Sandbox -->
+          <div class="card simulator-card">
+            <div class="sim-header">
+              <span class="sim-badge">매커니즘 ①</span>
+              <h3>비열(Specific Heat) Sandbox</h3>
+            </div>
+            <p class="sim-desc">물과 땅의 비열 차이(비열: 물 1.0 > 땅 약 0.2)로 발생하는 연교차와 대륙성/해양성 기후 특성을 보여주는 시뮬레이션입니다.</p>
+            
+            <div class="sandbox-container">
+              <!-- Visual Sandbox Graphic -->
+              <div class="sandbox-visual">
+                <div class="sandbox-half land-half" id="visual-land">
+                  <span class="label">대륙 (Land)</span>
+                  <div class="temp-indicator-overlay"><span id="live-land-temp">20.0</span>°C</div>
+                  <div class="particle-effect" id="land-particles"></div>
+                </div>
+                <div class="sandbox-half water-half" id="visual-water">
+                  <span class="label">해양 (Ocean)</span>
+                  <div class="temp-indicator-overlay"><span id="live-water-temp">20.0</span>°C</div>
+                  <div class="waves-effect">
+                    <div class="wave"></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Graphs / Output -->
+              <div class="sandbox-graph-container">
+                <canvas id="temp-graph" width="300" height="150"></canvas>
+              </div>
+
+              <!-- Controls -->
+              <div class="sandbox-controls">
+                <div class="control-row">
+                  <button id="btn-toggle-time" class="btn btn--primary">🌞 낮/여름 가열 시작</button>
+                  <button id="btn-reset-sandbox" class="btn btn--secondary">↺ 초기화</button>
+                </div>
+                <div class="info-row">
+                  <div>대륙 온도 변화: <span id="land-delta" class="text-orange">빠름</span> (극단적)</div>
+                  <div>해양 온도 변화: <span id="water-delta" class="text-cyan">느림</span> (완만함)</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sandbox 2: Atmospheric Circulation & Precipitation Slider -->
+          <div class="card simulator-card">
+            <div class="sim-header">
+              <span class="sim-badge">매커니즘 ②</span>
+              <h3>대기 대순환 & 위도별 강수</h3>
+            </div>
+            <p class="sim-desc">위도에 따른 대기 하강/상승 기류와 바람 패턴, 그리고 강수량과 증발량의 관계를 다이어그램과 함께 살펴봅니다.</p>
+
+            <div class="circulation-container">
+              <!-- Slider Input -->
+              <div class="slider-control-box">
+                <label for="lat-slider">가상 위도 조절: <span id="lat-display" class="text-emerald">0° (적도)</span></label>
+                <input type="range" id="lat-slider" min="0" max="90" value="0">
+              </div>
+
+              <!-- Live Visual Output Box -->
+              <div class="circulation-display-card">
+                <div class="display-row">
+                  <span class="disp-label">기압대 패턴:</span>
+                  <span id="circ-pressure-belt" class="disp-value text-orange">적도 저압대 (ITCZ)</span>
+                </div>
+                <div class="display-row">
+                  <span class="disp-label">지배적인 기류:</span>
+                  <span id="circ-air-flow" class="disp-value text-cyan">상승 기류 (적도 수렴)</span>
+                </div>
+                <div class="display-row">
+                  <span class="disp-label">대표 바람:</span>
+                  <span id="circ-wind" class="disp-value text-cyan">무역풍 (Trade Winds)</span>
+                </div>
+                <div class="display-row">
+                  <span class="disp-label">강수 vs 증발:</span>
+                  <span id="circ-water-status" class="disp-value text-emerald">강수량 > 증발량 (과습)</span>
+                </div>
+                
+                <!-- Water balance gauge visual -->
+                <div class="water-balance-gauge-container">
+                  <div class="gauge-bar">
+                    <div id="gauge-precip" class="gauge-fill precip-fill" style="width: 80%">강수량</div>
+                  </div>
+                  <div class="gauge-bar">
+                    <div id="gauge-evap" class="gauge-fill evap-fill" style="width: 40%">증발량</div>
+                  </div>
+                </div>
+
+                <!-- Dynamic Micro-biome visualization -->
+                <div class="micro-biome-viewer" id="circ-micro-biome">
+                  <div class="biome-graphic-placeholder" id="circ-biome-svg">
+                    <!-- Dynamic inline SVG biome indicator will be injected by JavaScript -->
+                  </div>
+                  <div class="biome-desc-text" id="circ-biome-desc">
+                    <strong>열대 우림 형성:</strong> 일사량이 많아 상승기류가 활발하며 매일 스콜성 강수가 내려 울창한 상록활엽수림이 발달합니다.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== PART 3: KOPPEN CLASSIFIER ==================== -->
+      <section id="tab-koppen" class="tab-content">
+        <div class="card">
+          <h2>🌲 PART 3. 쾨펜의 기후 구분 코드 (Köppen Climate Code)</h2>
+          <p>쾨펜 기후 구분법은 세계 식생 분포를 기온과 강수량이라는 두 가지 계량화된 지표를 기준으로 체계화한 가장 대중적인 기후 분류법입니다. 아래 진단기에 원하는 기후 지표를 입력해 실시간으로 기후 기호와 성격을 파악해 보세요.</p>
+        </div>
+
+        <div class="koppen-dashboard-grid">
+          <!-- Inputs / Sliders -->
+          <div class="card diagnostic-inputs-card">
+            <h3>⚙️ 기후 변수 수치 제어</h3>
+            <p class="section-sub">아래 수치들을 드래그하여 임의의 관측지 기후 데이터를 설정하세요.</p>
+
+            <div class="input-group">
+              <div class="input-header">
+                <label for="val-temp-coldest">🌡️ 최한월 평균 기온 (Coldest Month Temp)</label>
+                <span class="value-display" id="disp-temp-coldest">15.0 °C</span>
+              </div>
+              <input type="range" id="val-temp-coldest" min="-40" max="30" step="0.5" value="15" class="slider-temp">
+              <div class="slider-marks">
+                <span>-30℃</span>
+                <span>-3℃ (냉·온대 경계)</span>
+                <span>18℃ (열대 경계)</span>
+                <span>30℃</span>
+              </div>
+            </div>
+
+            <div class="input-group">
+              <div class="input-header">
+                <label for="val-temp-warmest">🔥 최난월 평균 기온 (Warmest Month Temp)</label>
+                <span class="value-display" id="disp-temp-warmest">26.0 °C</span>
+              </div>
+              <input type="range" id="val-temp-warmest" min="-10" max="40" step="0.5" value="26" class="slider-temp">
+              <div class="slider-marks">
+                <span>-10℃</span>
+                <span>0℃ (빙설/툰드라)</span>
+                <span>10℃ (수목/무수목)</span>
+                <span>22℃ (Cfa/Cfb)</span>
+                <span>40℃</span>
+              </div>
+            </div>
+
+            <div class="input-group">
+              <div class="input-header">
+                <label for="val-precip-ann">🌧️ 연간 총 강수량 (Annual Precipitation)</label>
+                <span class="value-display" id="disp-precip-ann">1200 mm</span>
+              </div>
+              <input type="range" id="val-precip-ann" min="50" max="4000" step="10" value="1200" class="slider-precip">
+              <div class="slider-marks">
+                <span>50mm</span>
+                <span>250mm (사막/스텝)</span>
+                <span>500mm (건조 한계)</span>
+                <span>1500mm</span>
+                <span>4000mm</span>
+              </div>
+            </div>
+
+            <div class="input-group">
+              <div class="input-header">
+                <label for="val-precip-dry">🏜️ 최우기 대비 최건기 강수량 (Driest Month)</label>
+                <span class="value-display" id="disp-precip-dry">70 mm</span>
+              </div>
+              <input type="range" id="val-precip-dry" min="0" max="300" step="1" value="70" class="slider-precip">
+              <div class="slider-marks">
+                <span>0mm (극단 건조)</span>
+                <span>30mm (온대Cs건조)</span>
+                <span>60mm (열대우림 기준)</span>
+                <span>100mm+</span>
+              </div>
+            </div>
+
+            <div class="input-group">
+              <div class="input-header">
+                <label>🌦️ 강수 계절 형태 (Rainfall Seasonality)</label>
+              </div>
+              <div class="radio-tile-group">
+                <label class="radio-tile">
+                  <input type="radio" name="val-seasonality" value="f" checked>
+                  <span class="tile-label">연중 균등 (f)<br><small>골고루 강수</small></span>
+                </label>
+                <label class="radio-tile">
+                  <input type="radio" name="val-seasonality" value="s">
+                  <span class="tile-label">여름 건조 (s)<br><small>지중해성 기후</small></span>
+                </label>
+                <label class="radio-tile">
+                  <input type="radio" name="val-seasonality" value="w">
+                  <span class="tile-label">겨울 건조 (w)<br><small>몬순/사바나/겨울건조</small></span>
+                </label>
+              </div>
+            </div>
+
+            <div class="input-group">
+              <div class="input-header">
+                <label for="val-altitude">🏔️ 해발 고도 (Elevation)</label>
+                <span class="value-display" id="disp-altitude">150 m</span>
+              </div>
+              <input type="range" id="val-altitude" min="0" max="5000" step="50" value="150">
+              <div class="slider-marks">
+                <span>0m (해안)</span>
+                <span>1000m</span>
+                <span>2000m (고산 기후 경계)</span>
+                <span>4000m</span>
+                <span>5000m</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dynamic Results & Visual Representation -->
+          <div class="results-column">
+            <!-- Classification Result Card -->
+            <div class="card result-card glass-glow">
+              <div class="result-badge-container">
+                <div class="code-badge" id="result-code">Af</div>
+                <div class="code-title-group">
+                  <h3 id="result-name">열대 우림 기후 (Tropical Rainforest)</h3>
+                  <span class="group-category-tag" id="result-group-tag">수목 기후 / 열대 기후</span>
+                </div>
+              </div>
+              
+              <div class="divider"></div>
+              
+              <!-- Dynamic SVG Biome Visualizer -->
+              <div class="biome-graphic-box">
+                <svg id="biome-svg" viewBox="0 0 400 200" width="100%" height="100%">
+                  <!-- SVG drawing contents generated by Javascript -->
+                </svg>
+              </div>
+
+              <!-- Mathematical Diagnosis Path -->
+              <div class="diagnosis-detail">
+                <h4>📊 실시간 진단 논리 매커니즘:</h4>
+                <ul class="diagnosis-steps-list" id="diagnosis-steps">
+                  <li>고도 검증: 150m (일반 기후대)</li>
+                  <li>수목 여부: 최난월 기온 26.0℃ ≥ 10℃ ➔ 수목 기후 통과</li>
+                  <li>기후대 구분: 최한월 기온 15.0℃ ➔ 온대 기후대 판정</li>
+                  <li>상세 분류: 연중 습윤(f) 및 최난월 22℃ 이상 ➔ Cfa 도출</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Interactive Decision Tree Highlight -->
+            <div class="card decision-tree-card">
+              <h3>🌳 쾨펜 의사결정 트리 필터링</h3>
+              <p class="section-sub">관측값이 트리 구조를 통과하여 분류 코드를 필터링하는 실시간 논리 경로입니다.</p>
+              
+              <div class="decision-tree-svg-container">
+                <!-- SVG interactive Flowchart of Koppen logic -->
+                <svg viewBox="0 0 600 240" width="100%" class="decision-tree-svg">
+                  <!-- Nodes and connectors -->
+                  <g id="tree-nodes">
+                    <!-- Connectors -->
+                    <line x1="300" y1="30" x2="150" y2="90" class="tree-line" id="line-root-tree"></line>
+                    <line x1="300" y1="30" x2="450" y2="90" class="tree-line" id="line-root-notree"></line>
+                    
+                    <line x1="150" y1="90" x2="60" y2="170" class="tree-line" id="line-tree-A"></line>
+                    <line x1="150" y1="90" x2="150" y2="170" class="tree-line" id="line-tree-C"></line>
+                    <line x1="150" y1="90" x2="240" y2="170" class="tree-line" id="line-tree-D"></line>
+                    
+                    <line x1="450" y1="90" x2="390" y2="170" class="tree-line" id="line-notree-B"></line>
+                    <line x1="450" y1="90" x2="510" y2="170" class="tree-line" id="line-notree-E"></line>
+
+                    <line x1="300" y1="30" x2="300" y2="170" class="tree-line" id="line-root-H" style="display:none;"></line>
+
+                    <!-- Root Node -->
+                    <rect x="230" y="10" width="140" height="30" rx="6" class="tree-node-rect" id="node-root"></rect>
+                    <text x="300" y="29" class="tree-node-text">기후 데이터 관측</text>
+
+                    <!-- Layer 1: Tree vs No Tree -->
+                    <rect x="80" y="75" width="140" height="30" rx="6" class="tree-node-rect" id="node-tree"></rect>
+                    <text x="150" y="94" class="tree-node-text">🌲 수목 기후 (A,C,D)</text>
+                    
+                    <rect x="380" y="75" width="140" height="30" rx="6" class="tree-node-rect" id="node-notree"></rect>
+                    <text x="450" y="94" class="tree-node-text">❌ 무수목 기후 (B,E)</text>
+
+                    <!-- Layer 2: Final Groups -->
+                    <rect x="15" y="155" width="90" height="30" rx="6" class="tree-node-rect" id="node-group-A"></rect>
+                    <text x="60" y="174" class="tree-node-text">열대 기후 [A]</text>
+                    
+                    <rect x="110" y="155" width="90" height="30" rx="6" class="tree-node-rect" id="node-group-C"></rect>
+                    <text x="150" y="174" class="tree-node-text">온대 기후 [C]</text>
+                    
+                    <rect x="205" y="155" width="90" height="30" rx="6" class="tree-node-rect" id="node-group-D"></rect>
+                    <text x="250" y="174" class="tree-node-text">냉대 기후 [D]</text>
+
+                    <rect x="345" y="155" width="90" height="30" rx="6" class="tree-node-rect" id="node-group-B"></rect>
+                    <text x="390" y="174" class="tree-node-text">건조 기후 [B]</text>
+
+                    <rect x="465" y="155" width="90" height="30" rx="6" class="tree-node-rect" id="node-group-E"></rect>
+                    <text x="510" y="174" class="tree-node-text">한대 기후 [E]</text>
+
+                    <!-- Special Node (Overlay or Side) -->
+                    <rect x="255" y="200" width="90" height="30" rx="6" class="tree-node-rect" id="node-group-H"></rect>
+                    <text x="300" y="219" class="tree-node-text">고산 기후 [H]</text>
+                  </g>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== TAB: REFERENCE ==================== -->
+      <section id="tab-reference" class="tab-content">
+        <div class="card">
+          <h2>📚 세계 기후 유형 사전 (Köppen Reference Library)</h2>
+          <p>각 카드를 클릭하여 쾨펜이 정의한 13가지 주요 세계 기후 유형의 상세 세부 분류 정의와 식생 경관, 특징적 지리 요인을 파악해 보세요.</p>
+        </div>
+
+        <div class="reference-grid">
+          <!-- Af -->
+          <div class="flip-card" data-code="Af">
+            <div class="flip-card-inner">
+              <div class="flip-card-front card-neon-emerald">
+                <div class="card-code">Af</div>
+                <h3>열대 우림 기후</h3>
+                <p class="front-sub">Tropical Rainforest</p>
+                <div class="card-desc">연중 다우, 최한월 18℃ 이상, 최소우월 60mm 이상</div>
+              </div>
+              <div class="flip-card-back">
+                <h3>열대 우림 (Af) 특징</h3>
+                <p><strong>대표 식생:</strong> 다층림, 밀림(정글), 넓은 활엽수</p>
+                <p><strong>강수 패턴:</strong> 연중 적도저압대의 영향으로 매일 대류성 강수(스콜) 발생</p>
+                <p><strong>지리적 분포:</strong> 아마존 분지(셀바스), 콩고 분지, 인도네시아 제도</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Am -->
+          <div class="flip-card" data-code="Am">
+            <div class="flip-card-inner">
+              <div class="flip-card-front card-neon-emerald">
+                <div class="card-code">Am</div>
+                <h3>열대 계절풍 기후</h3>
+                <p class="front-sub">Tropical Monsoon</p>
+                <div class="card-desc">짧은 건기와 울창한 우기, 몬순(Monsoon) 바람 영향</div>
+              </div>
+              <div class="flip-card-back">
+                <h3>열대 계절풍 (Am) 특징</h3>
+                <p><strong>대표 식생:</strong> 우록림(건기에 잎이 떨어지는 낙엽성 활엽수림)</p>
+                <p><strong>강수 패턴:</strong> 계절풍의 방향 변화에 따른 집중 호우형 우기</p>
+                <p><strong>지리적 분포:</strong> 인도 해안, 인도차이나 반도, 브라질 북동부</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Aw -->
+          <div class="flip-card" data-code="Aw">
+            <div class="flip-card-inner">
+              <div class="flip-card-front card-neon-emerald">
+                <div class="card-code">Aw</div>
+                <h3>사바나 기후</h3>
+                <p class="front-sub">Tropical Savanna</p>
+                <div class="card-desc">여름 우기/겨울 건기 뚜렷, 아열대 고압대 주기 이동</div>
+              </div>
+              <div class="flip-card-back">
+                <h3>사바나 기후 (Aw) 특징</h3>
+                <p><strong>대표 식생:</strong> 장초 초원(사바나), 듬성듬성한 소림(바오밥나무)</p>
+                <p><strong>강수 패턴:</strong> 여름은 적도저압대(우기), 겨울은 아열대고압대(건기)</p>
+                <p><strong>지리적 분포:</strong> 아프리카 중부 사바나, 브라질 고원(캄푸스)</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- BW -->
+          <div class="flip-card" data-code="BW">
+            <div class="flip-card-inner">
+              <div class="flip-card-front card-neon-orange">
+                <div class="card-code">BW</div>
+                <h3>사막 기후</h3>
+                <p class="front-sub">Arid Desert</p>
+                <div class="card-desc">연 강수량 250mm 미만, 극단적 건조와 큰 일교차</div>
+              </div>
+              <div class="flip-card-back">
+                <h3>사막 기후 (BW) 특징</h3>
+                <p><strong>대표 식생:</strong> 선인장 등 다육식물, 매우 드문 관목</p>
+                <p><strong>주요 메커니즘:</strong> 대기 대순환 아열대고압대 하강기류대 위치</p>
+                <p><strong>지리적 분포:</strong> 사하라 사막, 아라비아 사막, 호주 내륙</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- BS -->
+          <div class="flip-card" data-code="BS">
+            <div class="flip-card-inner">
+              <div class="flip-card-front card-neon-orange">
+                <div class="card-code">BS</div>
+                <h3>스텝 기후</h3>
+                <p class="front-sub">Semi-Arid Steppe</p>
+                <div class="card-desc">연 강수량 250~500mm, 짧은 풀 초원 형성</div>
+              </div>
+              <div class="flip-card-back">
+                <h3>스텝 기후 (BS) 특징</h3>
+                <p><strong>대표 식생:</strong> 단초 초원(스텝), 밀 농사 지대 개간</p>
+                <p><strong>토양 특징:</strong> 비옥한 흑색토(체르노젬) 발달</p>
+                <p><strong>지리적 분포:</strong> 유라시아 스텝 지대, 사헬 지대(사하라 남단)</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cfa -->
+          <div class="flip-card" data-code="Cfa">
+            <div class="flip-card-inner">
+              <div class="flip-card-front card-neon-blue">
+                <div class="card-code">Cfa</div>
+                <h3>온난 습윤 기후</h3>
+                <p class="front-sub">Humid Subtropical</p>
+                <div class="card-desc">최한월 -3~18℃, 최난월 22℃ 이상, 연중 다우</div>
+              </div>
+              <div class="flip-card-back">
+                <h3>온난 습윤 (Cfa) 특징</h3>
+                <p><strong>대표 식생:</strong> 조엽수림(동백나무 등 잎이 두꺼운 상록수)</p>
+                <p><strong>계절감:</strong> 사계절이 뚜렷하며, 여름철 기온과 습도가 매우 높음</p>
+                <p><strong>지리적 분포:</strong> 한국 남부, 일본 대부분, 미국 동남부</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cfb -->
+          <div class="flip-card" data-code="Cfb">
+            <div class="flip-card-inner">
+              <div class="flip-card-front card-neon-blue">
+                <div class="card-code">Cfb</div>
+                <h3>서안 해양성 기후</h3>
+                <p class="front-sub">Marine West Coast</p>
+                <div class="card-desc">최난월 22℃ 미만, 편서풍과 난류 영향, 온화한 기온</div>
+              </div>
+              <div class="flip-card-back">
+                <h3>서안 해양성 (Cfb) 특징</h3>
+                <p><strong>대표 식생:</strong> 낙엽활엽수림 및 혼합림</p>
+                <p><strong>기후 특징:</strong> 바다 비열 영향으로 겨울은 온화하고 여름은 서늘함</p>
+                <p><strong>지리적 분포:</strong> 서유럽(영국, 프랑스), 뉴질랜드, 칠레 남부</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cs -->
+          <div class="flip-card" data-code="Cs">
+            <div class="flip-card-inner">
+              <div class="flip-card-front card-neon-blue">
+                <div class="card-code">Cs</div>
+                <h3>지중해성 기후</h3>
+                <p class="front-sub">Mediterranean</p>
+                <div class="card-desc">여름 고온건조 (아열대 고압대), 겨울 온난습윤</div>
+              </div>
+              <div class="flip-card-back">
+                <h3>지중해성 (Cs) 특징</h3>
+                <p><strong>대표 식생:</strong> 경엽수림(올리브나무, 코르크참나무 등)</p>
+                <p><strong>역학 매커니즘:</strong> 여름은 고압대 남북 이동으로 대륙 서안에 건조대 형성</p>
+                <p><strong>지리적 분포:</strong> 지중해 연안, 미국 캘리포니아, 호주 남서부</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cw -->
+          <div class="flip-card" data-code="Cw">
+            <div class="flip-card-inner">
+              <div class="flip-card-front card-neon-blue">
+                <div class="card-code">Cw</div>
+                <h3>온대 겨울 건조 기후</h3>
+                <p class="front-sub">Dry Winter Temperate</p>
+                <div class="card-desc">겨울 건조기 뚜렷, 계절풍 영향 하계 집중 강수</div>
+              </div>
+              <div class="flip-card-back">
+                <h3>온대 겨울 건조 (Cw) 특징</h3>
+                <p><strong>대표 식생:</strong> 조엽수림 및 낙엽활엽수림 혼합</p>
+                <p><strong>농업 특징:</strong> 여름철 풍부한 고온다습 기후로 벼농사 활발</p>
+                <p><strong>지리적 분포:</strong> 중국 중남부, 인도 북부, 아프리카 고원지대</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Df -->
+          <div class="flip-card" data-code="Df">
+            <div class="flip-card-inner">
+              <div class="flip-card-front card-neon-purple">
+                <div class="card-code">Df</div>
+                <h3>냉대 습윤 기후</h3>
+                <p class="front-sub">Humid Continental / Subarctic</p>
+                <div class="card-desc">최한월 -3℃ 미만, 최난월 10℃ 이상, 연중 습윤</div>
+              </div>
+              <div class="flip-card-back">
+                <h3>냉대 습윤 (Df) 특징</h3>
+                <p><strong>대표 식생:</strong> 타이가(Taiga) 침엽수림대 (가문비나무, 소나무)</p>
+                <p><strong>기후 특징:</strong> 북반구 고위도 대륙에 넓게 분포, 혹한의 겨울</p>
+                <p><strong>지리적 분포:</strong> 러시아 시베리아 서부, 캐나다 대부분, 스칸디나비아</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dw -->
+          <div class="flip-card" data-code="Dw">
+            <div class="flip-card-inner">
+              <div class="flip-card-front card-neon-purple">
+                <div class="card-code">Dw</div>
+                <h3>냉대 겨울 건조 기후</h3>
+                <p class="front-sub">Dry Winter Continental</p>
+                <div class="card-desc">시베리아 고기압 확장으로 겨울철 매우 건조하고 혹한</div>
+              </div>
+              <div class="flip-card-back">
+                <h3>냉대 겨울 건조 (Dw) 특징</h3>
+                <p><strong>대표 식생:</strong> 침엽수림(낙엽송 위주 타이가)</p>
+                <p><strong>연교차:</strong> 대륙성 기후의 극단으로 지구상에서 연교차가 가장 큰 편</p>
+                <p><strong>지리적 분포:</strong> 러시아 시베리아 동부, 중국 동북부, 한국 북부</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- ET -->
+          <div class="flip-card" data-code="ET">
+            <div class="flip-card-inner">
+              <div class="flip-card-front card-neon-cyan">
+                <div class="card-code">ET</div>
+                <h3>툰드라 기후</h3>
+                <p class="front-sub">Tundra</p>
+                <div class="card-desc">최난월 0~10℃, 여름 짧은 해빙기 이끼/지의류 생장</div>
+              </div>
+              <div class="flip-card-back">
+                <h3>툰드라 기후 (ET) 특징</h3>
+                <p><strong>대표 식생:</strong> 순록이끼, 지의류, 선태류 (수목 생장 불가능)</p>
+                <p><strong>토양 특징:</strong> 지하에 영구 동토층 존재, 여름철 표면 해빙으로 늪지대 형성</p>
+                <p><strong>지리적 분포:</strong> 북극해 연안, 그린란드 주변부, 시베리아 극동 연안</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- EF -->
+          <div class="flip-card" data-code="EF">
+            <div class="flip-card-inner">
+              <div class="flip-card-front card-neon-cyan">
+                <div class="card-code">EF</div>
+                <h3>빙설 기후</h3>
+                <p class="front-sub">Ice Cap</p>
+                <div class="card-desc">최난월 0℃ 미만, 일 년 내내 얼음과 눈으로 덮임</div>
+              </div>
+              <div class="flip-card-back">
+                <h3>빙설 기후 (EF) 특징</h3>
+                <p><strong>대표 식생:</strong> 없음 (식물 생장 절대 불가, 무수목 기후의 극한)</p>
+                <p><strong>토양 특징:</strong> 대륙 빙하(두꺼운 만년설)가 지표면을 두껍게 피복</p>
+                <p><strong>지리적 분포:</strong> 남극 대륙, 그린란드 내륙 지대</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- H -->
+          <div class="flip-card" data-code="H">
+            <div class="flip-card-inner">
+              <div class="flip-card-front card-neon-pink">
+                <div class="card-code">H</div>
+                <h3>고산 기후</h3>
+                <p class="front-sub">Highland Climate</p>
+                <div class="card-desc">저위도 고산 지대, 일 년 내내 봄 같은 상춘(常春) 기후</div>
+              </div>
+              <div class="flip-card-back">
+                <h3>고산 기후 (H) 특징</h3>
+                <p><strong>대표 식생:</strong> 고도에 따른 수직적 식생 변화 (관목, 고산초원)</p>
+                <p><strong>생활 양식:</strong> 연중 온화하여 고산 도시 발달, 독특한 전통 의식주 형성</p>
+                <p><strong>지리적 분포:</strong> 안데스 산맥(라파스, 키토), 티베트 고원, 로키 산맥</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+      <p>© 2026 Anti-Gravity Science & Geography Labs. Powered by Google DeepMind pair-programming.</p>
+    </footer>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
